@@ -17,8 +17,8 @@ CSS styling and HTML provided through UT Austin Coding Bootcamp and Javascript f
 Rest of Javascript was written by Ronnie Rios.
 
 ## Demo
-![pw-generator] 
-(demo/demo.gif)
+![password generator demo] 
+(https://github.com/ronnie-rios/week-3-pw-generator/blob/main/demo/demo.gif)
 
 ## Link to website
 [Password Generator Link](https://ronnie-rios.github.io/week-3-pw-generator/)
