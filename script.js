@@ -1,3 +1,11 @@
+var generateBtn = document.querySelector("#generate");
+
+//variables
+const lowercaseChar = "abcdefghijklmnopqrstuvwxyz";
+const uppercaseChar = "ABCDEFGHIJKLMNOPQRSTUZWXYZ";
+const numericalChar = "0123456789";
+const specialChar = "!#$%&'()*+-./:;<=>?@[\^_`{|}~";
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
