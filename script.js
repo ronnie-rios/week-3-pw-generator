@@ -7,7 +7,7 @@ const numericalChar = "0123456789";
 const specialChar = "!#$%&'()*+-./:;<=>?@[\^_`{|}~";
 
 //pw generator function
-funtion generatePassword() {
+function generatePassword() {
   //empty strings to hold password
   var createdPassword='';
   var passwordChar='';
@@ -35,17 +35,23 @@ funtion generatePassword() {
     passwordChar += lowercaseChar;
   }
 
-if (checkUppercase) {
-    passwordChar +=uppercaseChar;
-  }
+  if (checkUppercase) {
+      passwordChar +=uppercaseChar;
+    }
 
-if (checkNumbers) {
-    passwordChar +=numericalChar;
-  }
+  if (checkNumbers) {
+      passwordChar +=numericalChar;
+    }
 
-if (checkSymbols) {
-    passwordChar += specialChar;
+  if (checkSymbols) {
+      passwordChar += specialChar;
   }
+  //for loop to randomly generate characters for pw
+  for (var i = 0; i < lengthPW; i++) {
+    createdPassword += passwordChar[Math.floor(Math.random()*passwordChar.length)];
+  }
+  return createdPassword;
+
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
